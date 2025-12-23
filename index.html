@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tannu Giri | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header fade-in">
+    <h1>Tannu Giri</h1>
+    <p>Frontend Developer | React | TypeScript</p>
+
+    <div class="links">
+      <a class="button" href="mailto:tannugiri730196@gmail.com">Email</a>
+      <a class="button" href="https://linkedin.com/in/tannu-giri" target="_blank">LinkedIn</a>
+      <a class="button" href="https://github.com/tannugiri11" target="_blank">GitHub</a>
+    </div>
+
+    <button id="themeToggle" class="theme-btn">Toggle Dark Mode</button>
+  </header>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      Frontend Developer with 3+ years of experience at Capgemini, specializing in
+      building scalable, performance-optimized web applications using React,
+      TypeScript, and modern JavaScript.
+    </p>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section reveal">
+    <h2>Skills</h2>
+
+    <div class="skill">
+      <span>React</span>
+      <div class="skill-bar"><span style="--level: 85%"></span></div>
+    </div>
+
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="skill-bar"><span style="--level: 90%"></span></div>
+    </div>
+
+    <div class="skill">
+      <span>TypeScript</span>
+      <div class="skill-bar"><span style="--level: 80%"></span></div>
+    </div>
+
+    <div class="skill">
+      <span>Redux</span>
+      <div class="skill-bar"><span style="--level: 75%"></span></div>
+    </div>
+    <div class="skill">
+      <span>AWS</span>
+      <div class="skill-bar"><span style="--level: 60%"></span></div>
+    </div>
+    <div class="skill">
+      <span>Tailwind CSS</span>
+      <div class="skill-bar"><span style="--level: 60%"></span></div>
+    </div>
+    <div class="skill">
+      <span>Material UI</span>
+      <div class="skill-bar"><span style="--level: 80%"></span></div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section reveal">
+    <h2>Professional Experience</h2>
+
+    <div class="card experience-card">
+
+      <h3>Frontend Developer — Capgemini</h3>
+      <p class="muted">July 2022 – Present | Bengaluru</p>
+
+      <!-- Project 1 -->
+      <div class="project-accordion">
+        <div class="project-header">
+          <h4>Billing & Analytics Dashboard</h4>
+          <span>+</span>
+        </div>
+
+        <div class="project-content">
+          <p class="project-desc">
+            Enterprise dashboard used to track usage, invoices, and cost analytics
+            across large-scale systems with a strong focus on performance and usability.
+          </p>
+
+          <ul class="project-points">
+            <li>Built reusable React and TypeScript components using Material UI</li>
+            <li>Integrated REST APIs with proper loading and error handling</li>
+            <li>Optimized performance using lazy loading and code splitting</li>
+            <li>Improved initial page load time by approximately 25%</li>
+          </ul>
+
+          <div class="project-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Material UI</span>
+            <span>REST APIs</span>
+            <span>CI/CD</span>
+            <span>Git</span>
+            <span>Azure</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-accordion">
+        <div class="project-header">
+          <h4>Alarm & Monitoring Dashboard</h4>
+          <span>+</span>
+        </div>
+
+        <div class="project-content">
+          <p class="project-desc">
+            Real-time monitoring application designed to visualize system alarms,
+            alerts, and operational metrics to enable faster issue detection.
+          </p>
+
+          <ul class="project-points">
+            <li>Developed interactive dashboards using React, Redux, and React Router</li>
+            <li>Managed complex global state for alarms, filters, and notifications</li>
+            <li>Built dynamic forms using React Hook Form with validations</li>
+            <li>Wrote unit tests using Jest and Enzyme</li>
+          </ul>
+
+          <div class="project-tags">
+            <span>React</span>
+            <span>Redux</span>
+            <span>Webpack</span>
+            <span>Jest</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section reveal">
+    <h2>Projects</h2>
+
+    <div class="card project-accordion">
+      <div class="project-header">
+        <h4>Swiggy Clone</h4>
+        <span>+</span>
+      </div>
+
+      <div class="project-content">
+        <p class="project-desc">
+          Swiggy-inspired food delivery web application built using React,
+          focusing on real-world product workflows.
+        </p>
+
+        <ul class="project-points">
+          <li>Restaurant listing, menu browsing, and cart management</li>
+          <li>REST API integration with loading and error states</li>
+          <li>Performance optimization using lazy loading and memoization</li>
+          <li>Fully responsive UI for mobile and desktop</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>REST APIs</span>
+        </div>
+
+        <a class="button" href="https://github.com/tannugiri11/swiggy_project" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2025 Tannu Giri</p>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script>
+    /* Scroll Reveal */
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      reveals.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+          el.classList.add("active");
+        }
+      });
+    });
+
+    /* Ripple Effect */
+    document.querySelectorAll(".button").forEach(btn => {
+      btn.addEventListener("click", e => {
+        const span = document.createElement("span");
+        span.className = "ripple";
+        span.style.left = e.offsetX + "px";
+        span.style.top = e.offsetY + "px";
+        btn.appendChild(span);
+        setTimeout(() => span.remove(), 600);
+      });
+    });
+
+    /* Dark Mode */
+    document.getElementById("themeToggle").onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+
+    /* Project Accordion Toggle */
+    document.querySelectorAll(".project-accordion").forEach(item => {
+      item.querySelector(".project-header").addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
